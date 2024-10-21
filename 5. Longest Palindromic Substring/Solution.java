@@ -27,7 +27,7 @@ class Solution {
                if(dp[i][j] == 1){
                   for(int k=1; k<length; k++){
                       if(j+k < length && i-k>=0 && arr[j+k] == arr[i-k])
-                         dp[i-1][j+k] = 1;
+                         dp[i-k][j+k] = 1;
                       else break;
                   }
                }
@@ -45,7 +45,5 @@ class Solution {
         }
 
         return s.substring(start, end+1);
-    }
-
-    
+    }    
 }
