@@ -47,6 +47,7 @@ class Solution {
         return s.substring(start, end+1);
     }
     
+    //second solution with dp
     public String longestPalindrome2(String s) {
       if (s.length() <= 1) {
           return s;
