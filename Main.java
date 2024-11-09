@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello");
+       
+        int[][] arr = new int[10][5];
+        System.out.println(arr.length+";"+arr[0].length);
     }
 }
